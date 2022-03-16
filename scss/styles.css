@@ -134,6 +134,7 @@ header {
 
 .banner .banner__text h6 {
   letter-spacing: 5px;
+  font-weight: 700;
 }
 
 .banner .banner__text h1 {
@@ -216,11 +217,12 @@ header {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  padding: 0.25em 0.75em;
+  padding: 0.5em 1em 0.25em;
   color: white;
   border-radius: 5px;
   letter-spacing: 1px;
   font-family: 'DIN Pro';
+  margin-bottom: 0.5em;
 }
 
 .main .slider .slider__text h4 {
@@ -320,5 +322,84 @@ footer {
   width: 100%;
   background-color: black;
   padding: 2em 5%;
+}
+
+@media screen and (max-width: 768px) {
+  .banner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 3em;
+    background-position-x: -400%;
+    background-position-y: bottom;
+  }
+  .banner .banner__text {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    max-width: 100%;
+  }
+  .banner .banner__text h4 {
+    text-align: center;
+  }
+  .banner .banner__text h1 {
+    text-align: center;
+  }
+  .main {
+    padding: 2em 1% 4em;
+  }
+  .main .slider {
+    width: 100%;
+  }
+  .main .articles {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .main .articles article {
+    width: 360px;
+    margin-bottom: 2em;
+  }
+  .arrow-link {
+    margin-top: 50px;
+  }
+  .blue-back {
+    height: 45em;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .banner {
+    padding: 80px 1%;
+    background-position-x: -12%;
+  }
+  .banner .banner__text h1 {
+    font-size: 35px;
+    line-height: 40px;
+  }
+  .banner .banner__text h4 {
+    line-height: 32px;
+  }
+  .banner img {
+    width: 100%;
+  }
+  .main {
+    background-image: none;
+  }
+  .main .slider {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .main .articles {
+    padding: 0 1%;
+  }
+  .blue-back {
+    height: 70em;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

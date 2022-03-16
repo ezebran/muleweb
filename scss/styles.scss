@@ -29,6 +29,7 @@ header{
         }
         h6{
             letter-spacing: 5px;
+            font-weight: 700;
         }
         h1{
             font-weight: 700;
@@ -76,11 +77,12 @@ header{
             h6{
                 background-color: $magenta;
                 width: fit-content;
-                padding: 0.25em 0.75em;
+                padding: 0.5em 1em 0.25em;
                 color: white;
                 border-radius: 5px;
                 letter-spacing: 1px;
                 font-family: 'DIN Pro';
+                margin-bottom: 0.5em;
             }
             h4{
                 font-family: 'DIN Pro';
@@ -155,3 +157,5 @@ footer{
     background-color: black;
     padding: 2em 5%;
 }
+
+@import "responsive";
