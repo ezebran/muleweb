@@ -1,0 +1,100 @@
+*{
+	margin: 0;
+	padding:0;
+	box-sizing: border-box;
+	font-weight:400;
+	text-decoration:none;
+	list-style:none;
+}
+
+// Din font-face
+
+@font-face {
+    font-family: 'DIN Pro';
+    font-weight: 300;
+    src: url('./../font/din/300/DINPro-Light.otf') format('otf'),
+    url('./../font/din/300/DINPro-Light.woff') format('woff'),
+    url('./../font/din/300/DINPro-Light2.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'DIN Pro';
+    font-weight: 400;
+    src: url('./../font/din/400/DINPro.otf') format('otf'),
+    url('./../font/din/400/DINPro.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'DIN Pro';
+    font-weight: 500;
+    src: url('./../font/din/500/DINPro-Medium.otf') format('otf'),
+    url('./../font/din/500/DINPro-Medium.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'DIN Pro';
+    font-weight: 700;
+    src: url('./../font/din/700/DINPro-CondBold.otf') format('otf'),
+    url('./../font/din/700/DINPro-Bold.woff') format('woff');
+}
+
+// Open font-face
+
+@font-face {
+    font-family: 'OpenSans';
+    font-weight: 400;
+    src: url('./../font/open_sans/400/OpenSans-Regular-webfont.eot') format('eot'),
+    url('./../font/open_sans/400/OpenSans-Regular-webfont.svg') format('svg'),
+    url('./../font/open_sans/400/OpenSans-Regular-webfont.woff') format('woff'),
+    url('./../font/open_sans/400/OpenSans-Regular.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    font-weight: 700;
+    src: url('./../font/open_sans/700/OpenSans-Bold-webfont.eot') format('eot'),
+    url('./../font/open_sans/700/OpenSans-Bold-webfont.svg') format('svg'),
+    url('./../font/open_sans/700/OpenSans-Bold-webfont.woff') format('woff'),
+    url('./../font/open_sans/700/OpenSans-Bold.ttf') format('ttf');
+}
+
+// Colors
+
+$primary: #00A0DF;
+$magenta: #E50097;
+$purple: #5E66F9;
+$blue: #00044C;
+
+// Font sizes
+
+h1{
+    font-size: 2.8125em; // 45px
+    line-height: 55px;
+}
+
+h4{
+    font-size: 1.375em; // 22px
+}
+
+h6{
+    font-size: 0.75em; // 12px
+}
+
+// Links
+
+.arrow-link{
+    width: fit-content;
+    font-weight: 700;
+    color: $primary;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 70px;
+    .arrow-icon{
+        background-color: $primary;
+        padding: 6px 8px;
+        border-radius: 100%;
+    }
+}
